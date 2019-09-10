@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
+
+$color-red:red;
+$color-blue:blue;
+$color-gray:rgb(94, 91, 91);
+$color-violet:blueviolet;
+
+@mixin set-dimentions($width,$height){
+    height: $width;
+    width: $height; 
+}
+@mixin set-buttons($color){
+    padding:0.5em 1em;
+    border-radius: 2em;
+    border:0;
+    opacity:0.8;
+    color:$color;
+}
+@mixin set-flex(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin set-font($font-family,$color){
+    font-family: $font-family;
+    color:$color
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+body{
+    @include set-dimentions(100%,100%);
+    background:url("https://previews.123rf.com/images/foreverrich/foreverrich1806/foreverrich180600188/103607955-pastel-green-brown-yellow-abstract-wallpaper-background.jpg");
+    margin:0;
+    
+}

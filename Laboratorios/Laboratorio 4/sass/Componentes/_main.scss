@@ -1,0 +1,30 @@
+.container{
+   
+    @include set-flex();
+    @include set-dimentions(100%,100%)
+}
+.inicio{
+    
+  
+    @include set-flex();
+    @include set-dimentions(100%,80%);
+}
+h1{
+    
+    font-size: 5em;
+    text-decoration-line: underline;
+    @include set-font('Vollkorn', serif,$color-gray);
+ }
+
+img{
+   
+    @include set-dimentions(5em,5em);
+}
+
+.iconos{
+ 
+    flex-flow:row wrap;
+    @include set-flex();
+    @include set-dimentions(100%,0%);
+  
+}
